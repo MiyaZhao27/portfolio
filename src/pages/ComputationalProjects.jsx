@@ -1,24 +1,24 @@
 import DogOutlineGuide from "../components/DogOutlineGuide.jsx";
 import ShinyEmbed from "../components/ShinyEmbed.jsx";
 
-export default function DataAnalytics() {
-  const paper1 = `${import.meta.env.BASE_URL}Analysis of World Happiness Trends.pdf`;
-  const paper2 = `${import.meta.env.BASE_URL}COVID-19 Steady State Modeling.pdf`;
+export default function ComputationalProjects() {
+  const crypticPaper = `${import.meta.env.BASE_URL}The Minute Cryptic Decrypted An Algorithmic Approach to Solving.pdf`;
+  const crypticDecrypter = `${import.meta.env.BASE_URL}Minute Cryptic Decrypter.pdf`;
 
   const outlineSections = [
+    {
+      title: "Computational Projects/Websites",
+      items: [
+        "The Minute Cryptic Decrypted: An Algorithmic Approach to Solving Wordplay Puzzles",
+        "yale-maps",
+      ]
+    },
     {
       title: "Data Visualization Tools",
       items: [
         "Finding Home: Visualizing Property Values Along the Metro-North Line",
         "L-Asparaginase Feature Analysis Dashboard",
         "EV Charging Station Explorer",
-      ]
-    },
-    {
-      title: "Data Analytics Papers",
-      items: [
-        "Analysis of World Happiness Trends",
-        "COVID-19 Steady State Modeling",
       ]
     }
   ];
@@ -32,30 +32,6 @@ export default function DataAnalytics() {
     width: "100%",
     height: "clamp(400px, 50vw, 500px)",
     minHeight: "400px",
-  };
-
-  const sectionStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    gap: "clamp(1rem, 4vw, 2rem)",
-    flexWrap: "wrap",
-    marginBottom: "clamp(2rem, 6vw, 4rem)",
-  };
-
-  const textStyle = {
-    flex: "1 1 300px",
-    color: "#ddd",
-    lineHeight: "1.6",
-    fontSize: "1.05rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-  };
-
-  const pdfContainer = {
-    flex: "1 1 600px",
-    maxWidth: "100%",
   };
 
   const containerStyle = {
@@ -167,12 +143,85 @@ export default function DataAnalytics() {
     <div style={containerStyle} className="project-outline-container">
       <DogOutlineGuide sections={outlineSections} />
       <div style={contentStyle} className="project-content">
-      <h1 className="ep-header"><span className="typewriter-title">Data Analytics Projects</span></h1>
+      <h1 className="ep-header"><span className="typewriter-title">Computational Projects</span></h1>
       <p className="ep-sub" style={{ marginBottom: "3rem", textAlign: "center" }}>
-        A showcase of projects applying statistical modeling, visualization, and predictive
-        analysis to uncover insights from real-world datasets. Each project integrates data
-        storytelling with technical rigor to communicate impactful findings.
+        A collection of computational projects spanning algorithmic problem-solving, interactive data visualizations, 
+        and web applications. Each project demonstrates technical innovation and practical implementation.
       </p>
+
+      {/* ===== Computational Projects/Websites ===== */}
+      <h2 style={{ textAlign: "left", margin: "1rem 0 2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>Computational Projects/Websites</h2>
+      
+      {/* --- The Minute Cryptic --- */}
+      <div id="the-minute-cryptic-decrypted-an-algorithmic-approach-to-solving-wordplay-puzzles" style={{ marginBottom: "3rem" }}>
+        <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>The Minute Cryptic Decrypted: An Algorithmic Approach to Solving Wordplay Puzzles</h3>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            Minute Cryptic is a crossword game that incorporates letter-play and wordplay to create linguistic puzzles. 
+            We developed a two-stage pipeline combining machine learning classification with specialized solving algorithms 
+            to automatically solve these puzzles. Our approach first classifies puzzles into three categories (anagrams, 
+            hiddens, or selectors) using logistic regression with GloVe embeddings, then applies tailored algorithms for 
+            each type. Despite limited training data (39 examples), our system achieves 69% classification accuracy. The 
+            pipeline achieved a 38% end-to-end solving accuracy; however, the correct answer was found in the candidate 
+            list 67% of the time. This work contributes to understanding how computational methods can solve pun-based 
+            puzzles and demonstrates the challenges LLMs face in capturing human nuances in communication.
+          </p>
+          <div style={{ marginTop: "1rem", textAlign: "center" }}>
+            <a
+              href="https://github.com/MiyaZhao27/MinuteCrypticDecrypter"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-block",
+                padding: ".6rem .9rem",
+                borderRadius: "999px",
+                border: "1px solid #444",
+                background: "#222",
+                color: "#fff",
+                textDecoration: "none",
+              }}
+            >
+              View Scripts and Results on GitHub ↗
+            </a>
+          </div>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row", gap: "2rem", flexWrap: "wrap" }}>
+          <div style={{ flex: "1 1 calc(50% - 1rem)", minWidth: "300px" }}>
+            <h4 style={{ fontSize: "1.25rem", marginBottom: "1rem", color: "#fff" }}>Introductory Presentation</h4>
+            <object data={crypticDecrypter} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={crypticDecrypter} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
+          <div style={{ flex: "1 1 calc(50% - 1rem)", minWidth: "300px" }}>
+            <h4 style={{ fontSize: "1.25rem", marginBottom: "1rem", color: "#fff" }}>Final Findings</h4>
+            <object data={crypticPaper} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={crypticPaper} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
+        </div>
+      </div>
+
+      {/* --- yale-maps placeholder --- */}
+      <div id="yale-maps" style={{ marginBottom: "3rem" }}>
+        <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>yale-maps</h3>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            Coming soon...
+          </p>
+        </div>
+      </div>
 
       {/* ===== Shiny apps (stacked) ===== */}
       <h2 style={{ textAlign: "left", margin: "1rem 0 2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>Data Visualization Tools</h2>
@@ -181,7 +230,7 @@ export default function DataAnalytics() {
           const sectionId = a.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
           return (
           <div key={i} id={sectionId} style={{ width: "100%", margin: "0 auto" }}>
-            <h3 style={{ textAlign: "left", marginBottom: "0.5rem" }}>{a.name}</h3>
+            <h3 style={{ textAlign: "left", marginBottom: "0.5rem", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>{a.name}</h3>
             <p className="ep-sub" style={{ textAlign: "left", marginBottom: "1rem" }}>{a.desc}</p>
             <ShinyEmbed url={a.url} title={a.name} height={a.height} />
             <div style={{ textAlign: "center", marginTop: ".75rem" }}>
@@ -205,62 +254,6 @@ export default function DataAnalytics() {
           </div>
           );
         })}
-      </div>
-
-            <h2 style={{ textAlign: "left", margin: "1rem 0 2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>Data Analytics Projects</h2>
-
-      {/* --- Paper 1 --- */}
-      <div id="analysis-of-world-happiness-trends" style={{ marginBottom: "3rem" }}>
-        <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left" }}>Analysis of World Happiness Trends</h3>
-          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
-            This analytics report explores global happiness survey data over multiple years to identify key socioeconomic factors driving well-being. Using regression modeling and correlation analysis, it highlights that social support, healthy life expectancy, perceptions of corruption, and emotional well-being are the strongest predictors of life satisfaction, while factors like generosity show little impact. The study also reveals regional differences, emphasizing how location and living conditions shape happiness. Visualizations were created using R packages like ggplot2.
-          </p>
-        </div>
-        <div style={{ width: "100%" }}>
-          <object data={paper1} type="application/pdf" style={frameStyle}>
-            <p>
-              Unable to display PDF.{" "}
-              <a href={paper1} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
-                Click here to open it
-              </a>
-              .
-            </p>
-          </object>
-        </div>
-      </div>
-
-      {/* --- Paper 2 --- */}
-      <div id="covid-19-steady-state-modeling" style={{ marginBottom: "3rem" }}>
-        <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left" }}>COVID-19 Steady State Modeling</h3>
-          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
-            In 2020, the COVID-19 pandemic irreversibly changed global health, economies, and daily life. Four years later, shifts from
-            rapid response to immediate outbreaks to dealing with the virus’s long-term effects led to new important questions: Will
-            COVID-19 infection rates settle down over time, and what factors will influence their long-term behavior? Additionally,
-            can we use sporadic updates to predict daily new cases in order to more accurately track the progression of cumulative
-            cases of COVID through a population? Answering these questions is crucial for future public health strategies and the
-            ever growing impact of airborne infections. This project uses linear algebra methods, specifically Markov chains with
-            steady-state analysis and least-square approximation, to study and predict how COVID-19 infection rates might change
-            over given time periods. Markov chains model the chances of moving between different stages of infection, allowing us to
-            find steady states of infection rates and make important assumptions. Additionally, these matrices allow for individualized
-            probability predictions after a certain time frame (transitions). On the other hand, least-square approximation provides a
-            way to determine COVID-19 cases more accurately in broader data sets, which is useful when COVID-19 data is tracked
-            at larger time intervals. By combining these mathematical tools, this study aims to determine the future of COVID-19
-            in our population.
-          </p>
-        </div>
-        <div style={{ width: "100%" }}>
-          <object data={paper2} type="application/pdf" style={frameStyle}>
-            <p>
-              Unable to display PDF.{" "}
-              <a href={paper2} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
-                Click here to open it
-              </a>
-              .
-            </p>
-          </object>
-        </div>
       </div>
       </div>
     </div>

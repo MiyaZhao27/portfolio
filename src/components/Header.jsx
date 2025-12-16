@@ -77,7 +77,7 @@ export default function Header() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "0 1rem",
+          padding: "0 clamp(1.5rem, 4vw, 3rem)",
           boxSizing: "border-box",
           zIndex: 1000,
         }}
@@ -104,7 +104,7 @@ export default function Header() {
 
         <nav className="header-nav" style={{ display: "flex", gap: "1rem" }}>
           {link("/", "Home")}
-          {link("/data-analytics", "Data Analytics")}
+          {link("/computational-projects", "Computational Projects")}
           {link("/biology-research", "Research")}
           {link("/event-planning", "Club Blog")}
           {link("/art", "Art Gallery")}

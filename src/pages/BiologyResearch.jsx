@@ -5,33 +5,23 @@ export default function BiologyResearch() {
   const paper2 = `${import.meta.env.BASE_URL}Increasing Bioavailability of Anthocyanin in Daucus carota (V. Imperator & Deep Purple) Through CRISPR_Cas12-Mediated Editing (1).pdf`;
   const paper3 = `${import.meta.env.BASE_URL}Isolation and Identification of Plastic-Degrading and Oil-Degrading Bacteria In a Soil Sample.pdf`;
   const paper4 = `${import.meta.env.BASE_URL}PRG2’s Effect on LPA Reception in Neurons (2).pdf`;
-  const maasJournal = `${import.meta.env.BASE_URL}maas-journal.pdf`;
-
+  const maasJournal = `${import.meta.env.BASE_URL}maas-journal.pdf`;  const happinessPaper = `${import.meta.env.BASE_URL}Analysis of World Happiness Trends.pdf`;
+  const covidPaper = `${import.meta.env.BASE_URL}COVID-19 Steady State Modeling.pdf`;
   const outlineSections = [
     {
-      title: "iGEM Project",
+      title: "Biology Research",
       items: [
-        "Yale iGEM Wiki",
-        "Summer 2023 Wet Lab Findings",
-        "MAAS Journal Publication",
+        "iGEM Project",
+        "Increasing Bioavailability of Anthocyanin in Daucus carota",
+        "Isolation of Plastic Degrading Bacteria",
+        "PRG's Effect on LPA Reception in Neurons",
       ]
     },
     {
-      title: "Increasing Bioavailability of Anthocyanin in Daucus carota",
+      title: "Data Analytics Research",
       items: [
-        "How Does One Make a Carrot as Nutritious as a Blueberry?",
-      ]
-    },
-    {
-      title: "Isolation of Plastic Degrading Bacteria",
-      items: [
-        "Does Gas Station Soil Contain Plastic-Degrading Bacteria?",
-      ]
-    },
-    {
-      title: "PRG's Effect on LPA Reception in Neurons",
-      items: [
-        "How Do Axons Know Where to Go?",
+        "Analysis of World Happiness Trends",
+        "COVID-19 Steady State Modeling",
       ]
     }
   ];
@@ -164,7 +154,7 @@ export default function BiologyResearch() {
     <div style={containerStyle} className="project-outline-container">
       <DogOutlineGuide sections={outlineSections} />
       <div style={contentStyle} className="project-content">
-      <h1 className="ep-header"><span className="typewriter-title">Biology Research</span></h1>
+      <h1 className="ep-header"><span className="typewriter-title">Research</span></h1>
       <p
         className="ep-sub"
         style={{
@@ -173,17 +163,23 @@ export default function BiologyResearch() {
         }}
       >
         A collection of research projects exploring synthetic biology,
-        environmental microbiology, and neurobiology. 
+        environmental microbiology, neurobiology, statistical modeling, and data visualization.
       </p>
+
+      {/* ========== BIOLOGY RESEARCH SECTION ========== */}
+      <div style={{ marginBottom: "5rem" }}>
+        <h2 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+          Biology Research
+        </h2>
 
       {/* ========== iGEM PROJECT SECTION ========== */}
       <div style={{ marginBottom: "5rem" }}>
-        <h3 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+        <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>
           2023-2025 iGEM Project: Click. Customize. Catalyze. 
         </h3>  
-        <h4 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "1.5rem" }}>
+        <h5 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "1.5rem" }}>
           A Systematic Approach to Site Specific Enzyme Functionalization
-        </h4>
+        </h5>
 
         {/* --- iGEM Wiki Subsection --- */}
         <div id="yale-igem-wiki" style={{ width: "100%", margin: "0 auto 4rem" }}>
@@ -258,10 +254,8 @@ export default function BiologyResearch() {
           </div>
 
           <div style={{ ...textStyle, textAlign: "left", alignItems: "flex-start" }} className="text-responsive">
-            <h3 style={{ fontSize: "1.5rem" }}>
-              Summer 2023 Wet Lab Findings
-            </h3>
             <p>
+              <strong style={{ fontSize: "1.5rem", display: "block", marginBottom: "0.5rem" }}>Summer 2023 Wet Lab Findings</strong>
               My initial wet lab research from summer 2023 focused on identifying non-standard amino acid incorporation sites for half-life extension of chemotherapeutic L-asparaginase. We conducted initial research in site-selection through a series of mutation techniques, cloning, and expression optimization for bioactivity testing, laying the groundwork for our iGEM project.
             </p>
           </div>
@@ -282,10 +276,8 @@ export default function BiologyResearch() {
           </div>
 
           <div style={{ ...textStyle, textAlign: "left", alignItems: "flex-start" }} className="text-responsive">
-            <h3 style={{ fontSize: "1.5rem" }}>
-              MAAS Journal Publication
-            </h3>
             <p>
+              <strong style={{ fontSize: "1.5rem", display: "block", marginBottom: "0.5rem" }}>MAAS Journal Publication</strong>
               Our team's research pipeline for systematic protein functionalization through non-standard amino acid incorporation was published in the MAAS Journal. This publication details our complete methodology, experimental results, and the machine learning model we developed to predict promising edit sites for protein engineering applications.
             </p>
           </div>
@@ -294,17 +286,15 @@ export default function BiologyResearch() {
 
       {/* ========== INCREASING BIOAVAILABILITY OF ANTHOCYANIN SECTION ========== */}
       <div style={{ marginBottom: "5rem" }}>
-        <h2 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+        <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>
           Increasing Bioavailability of Anthocyanin in Daucus carota
-        </h2>
+        </h3>
 
       {/* --- Research Paper --- */}
       <div id="how-does-one-make-a-carrot-as-nutritious-as-a-blueberry" style={{ marginBottom: "3rem" }}>
         <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left" }}>
-            How Does One Make a Carrot as Nutritious as a Blueberry?
-          </h3>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            <strong>How Does One Make a Carrot as Nutritious as a Blueberry?</strong><br />
               In order to create more
               bioavailable commercial carrots, scientists want to remove the acylation chemical modification
               characteristic on anthocyanin, a nutrient found in berry-colored fruits and vegetables. The
@@ -331,17 +321,15 @@ export default function BiologyResearch() {
 
       {/* ========== ISOLATION OF PLASTIC DEGRADING BACTERIA SECTION ========== */}
       <div style={{ marginBottom: "5rem" }}>
-        <h2 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+        <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>
           Isolation of Plastic Degrading Bacteria
-        </h2>
+        </h3>
 
       {/* --- Research Paper --- */}
       <div id="does-gas-station-soil-contain-plastic-degrading-bacteria" style={{ marginBottom: "3rem" }}>
         <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left" }}>
-            Does Gas Station Soil Contain Plastic-Degrading Bacteria?
-          </h3>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            <strong>Does Gas Station Soil Contain Plastic-Degrading Bacteria?</strong><br />
             With the rise of climate change and pollution, there is a growing need to find sustainable ways to remove contaminants and restore ecological balance. My project explored the potential of bioremediation, a process that uses natural organisms such as microbes and plants to detoxify the environment.
             According to ScienceDirect, bioremediation technologies have the potential to clear ecosystems of both man-made and natural contaminants, improving public and environmental health. Beyond plastic degradation, this approach could provide cost-effective and sustainable solutions for treating hazardous waste, restoring soil quality, and even cleaning oil spills or wastewater through microbial or enzymatic activity.
             The goal of my research was to isolate and culture oil-degrading and potentially plastic-degrading bacteria from a soil sample collected at a local gas station. By identifying and characterizing these bacteria, this work contributes to a broader vision of using biology to address some of the planet’s most pressing environmental challenges.
@@ -363,15 +351,15 @@ export default function BiologyResearch() {
 
       {/* ========== PRG'S EFFECT ON LPA RECEPTION IN NEURONS SECTION ========== */}
       <div style={{ marginBottom: "5rem" }}>
-        <h2 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+        <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>
           PRG's Effect on LPA Reception in Neurons
-        </h2>
+        </h3>
 
       {/* --- Research Paper --- */}
       <div id="how-do-axons-know-where-to-go" style={{ marginBottom: "3rem" }}>
         <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left" }}>How Do Axons Know Where to Go?</h3>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", marginBottom: "1rem", textAlign: "left" }}>
+            <strong>How Do Axons Know Where to Go?</strong><br />
             <em>Presented at the South Carolina Junior Academy of Sciences</em>
           </p>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", marginBottom: "1rem", textAlign: "left" }}>
@@ -397,6 +385,68 @@ export default function BiologyResearch() {
               .
             </p>
           </object>
+        </div>
+      </div>
+      </div>
+
+      {/* ========== DATA ANALYTICS RESEARCH SECTION ========== */}
+      <div style={{ marginBottom: "5rem" }}>
+        <h2 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+          Data Analytics Research
+        </h2>
+
+        {/* --- Paper 1 --- */}
+        <div id="analysis-of-world-happiness-trends" style={{ marginBottom: "3rem" }}>
+          <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Analysis of World Happiness Trends</h3>
+            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+              This analytics report explores global happiness survey data over multiple years to identify key socioeconomic factors driving well-being. Using regression modeling and correlation analysis, it highlights that social support, healthy life expectancy, perceptions of corruption, and emotional well-being are the strongest predictors of life satisfaction, while factors like generosity show little impact. The study also reveals regional differences, emphasizing how location and living conditions shape happiness. Visualizations were created using R packages like ggplot2.
+            </p>
+          </div>
+          <div style={{ width: "100%" }}>
+            <object data={happinessPaper} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={happinessPaper} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
+        </div>
+
+        {/* --- Paper 2 --- */}
+        <div id="covid-19-steady-state-modeling" style={{ marginBottom: "3rem" }}>
+          <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>COVID-19 Steady State Modeling</h3>
+            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+              In 2020, the COVID-19 pandemic irreversibly changed global health, economies, and daily life. Four years later, shifts from
+              rapid response to immediate outbreaks to dealing with the virus's long-term effects led to new important questions: Will
+              COVID-19 infection rates settle down over time, and what factors will influence their long-term behavior? Additionally,
+              can we use sporadic updates to predict daily new cases in order to more accurately track the progression of cumulative
+              cases of COVID through a population? Answering these questions is crucial for future public health strategies and the
+              ever growing impact of airborne infections. This project uses linear algebra methods, specifically Markov chains with
+              steady-state analysis and least-square approximation, to study and predict how COVID-19 infection rates might change
+              over given time periods. Markov chains model the chances of moving between different stages of infection, allowing us to
+              find steady states of infection rates and make important assumptions. Additionally, these matrices allow for individualized
+              probability predictions after a certain time frame (transitions). On the other hand, least-square approximation provides a
+              way to determine COVID-19 cases more accurately in broader data sets, which is useful when COVID-19 data is tracked
+              at larger time intervals. By combining these mathematical tools, this study aims to determine the future of COVID-19
+              in our population.
+            </p>
+          </div>
+          <div style={{ width: "100%" }}>
+            <object data={covidPaper} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={covidPaper} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
         </div>
       </div>
       </div>

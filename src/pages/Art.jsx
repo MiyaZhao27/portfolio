@@ -17,8 +17,20 @@ export default function Art() {
     src: `${import.meta.env.BASE_URL}${file}`,
   }));
 
-  // Art page doesn't have sections to navigate to, so empty sections
-  const outlineSections = [];
+  const outlineSections = [
+    {
+      title: "Art Gallery",
+      items: []
+    },
+    {
+      title: "Design Work",
+      items: [
+        "ECAASU",
+        "YHHAP Fast",
+        "Publications"
+      ]
+    }
+  ];
 
   const containerStyle = {
     background: "#222",
@@ -164,14 +176,52 @@ export default function Art() {
       `}</style>
 
       <h1 className="art-header"><span className="typewriter-title">Welcome to My Art Gallery!</span></h1>
-      <p className="art-sub">A collection of my digital pieces and creative sketches.</p>
+      <p className="art-sub">A collection of my digital art and design projects.</p>
 
-      <div className="masonry">
-        {artworks.map((art, i) => (
-          <div key={i} className="masonry-item">
-            <img src={art.src} alt={`Artwork ${i + 1}`} loading="lazy" />
-          </div>
-        ))}
+      {/* ========== ART GALLERY SECTION ========== */}
+      <div style={{ marginBottom: "5rem" }}>
+        <h2 style={{ textAlign: "left", marginBottom: "2rem", marginTop: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+          Art Gallery
+        </h2>
+
+        <div className="masonry">
+          {artworks.map((art, i) => (
+            <div key={i} className="masonry-item">
+              <img src={art.src} alt={`Artwork ${i + 1}`} loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ========== DESIGN WORK SECTION ========== */}
+      <div style={{ marginBottom: "5rem" }}>
+        <h2 style={{ textAlign: "left", marginBottom: "2rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+          Design Work
+        </h2>
+
+        {/* --- ECAASU --- */}
+        <div id="ecaasu" style={{ marginBottom: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>ECAASU</h3>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            Coming soon...
+          </p>
+        </div>
+
+        {/* --- YHHAP Fast --- */}
+        <div id="yhhap-fast" style={{ marginBottom: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>YHHAP Fast</h3>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            Coming soon...
+          </p>
+        </div>
+
+        {/* --- Publications --- */}
+        <div id="publications" style={{ marginBottom: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Publications</h3>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            Coming soon...
+          </p>
+        </div>
       </div>
       </div>
     </div>
