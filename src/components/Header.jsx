@@ -106,7 +106,7 @@ export default function Header() {
           {link("/", "Home")}
           {link("/computational-projects", "Computational Projects")}
           {link("/biology-research", "Research")}
-          {link("/event-planning", "Club Blog")}
+          {link("/event-planning", "Events Archive")}
           {link("/art", "Art Gallery")}
         </nav>
 
