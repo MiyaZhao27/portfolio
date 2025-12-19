@@ -259,17 +259,17 @@ export default function EventPlanning() {
         
         {/* Organization Bio Section */}
         <div style={{ marginBottom: "3rem", display: "flex", gap: "2rem", alignItems: "flex-start", flexWrap: "wrap" }}>
-          <div style={{ flex: "0 0 200px", minWidth: "200px" }}>
+          <div style={{ flex: "0 0 350px", minWidth: "350px" }}>
             <img
               src={`${import.meta.env.BASE_URL}casaboardphoto.png`}
               alt="CASA Board"
-              style={{ width: "200px", height: "200px", borderRadius: "8px", objectFit: "cover" }}
+              style={{ width: "350px", height: "200px", borderRadius: "8px", objectFit: "cover" }}
             />
           </div>
           <div style={{ flex: "1 1 300px", color: "#ddd", lineHeight: "1.6" }}>
-            <p>
-            The Chinese American Students Association (CASA) is one of Yale’s largest and most active undergraduate organizations with over 900 members. CASA serves as a home for all members of the Yale community, bringing together students of all backgrounds to celebrate Chinese American culture, identity, and experiences. The CASA Board organizes various cultural, political, and social events each year, including the annual Lunar Ball, Cultural Show, Hot Pot Nights, community discussions, and speaker events.
-            Here are some of the events I helped plan and execute during my time with CASA.
+            <p style={{ fontSize: "0.9rem" }}>
+            The <a href="https://www.yalecasa.org/" target="_blank" rel="noopener noreferrer" style={{ color: "#d64545", textDecoration: "none", fontSize: "0.9rem"  }}>Chinese American Students Association (CASA)</a> is one of Yale's largest and most active undergraduate organizations with over 900 members. CASA serves as a home for all members of the Yale community, bringing together students of all backgrounds to celebrate Chinese American culture, identity, and experiences. The CASA Board organizes various cultural, political, and social events each year, including the annual Lunar Ball, Cultural Show, Hot Pot Nights, community discussions, and speaker events.
+            I've had the pleasure of serving as a First Year Liason, Cultural Chair, then Co-President. Here are some of the events I helped plan and execute during my time with CASA.
             </p>
           </div>
         </div>
@@ -307,16 +307,18 @@ export default function EventPlanning() {
         
         {/* Organization Bio Section */}
         <div style={{ marginBottom: "3rem", display: "flex", gap: "2rem", alignItems: "flex-start", flexWrap: "wrap" }}>
-          <div style={{ flex: "0 0 200px", minWidth: "200px" }}>
+          <div style={{ flex: "0 0 350px", minWidth: "350px" }}>
             <img
               src={`${import.meta.env.BASE_URL}hacrphoto.jpeg`}
               alt="AACC HACR Team"
-              style={{ width: "200px", height: "200px", borderRadius: "8px", objectFit: "cover" }}
+              style={{ width: "350px", height: "200px", borderRadius: "8px", objectFit: "cover" }}
             />
           </div>
           <div style={{ flex: "1 1 300px", color: "#ddd", lineHeight: "1.6" }}>
-            <p>
-              Add organization bio here. Describe the mission, activities, and your role in AACC.
+            <p style={{ fontSize: "0.9rem" }}>
+              The <a href="https://www.instagram.com/aacc.yale/?hl=en" target="_blank" rel="noopener noreferrer" style={{ color: "#d64545", textDecoration: "none", fontSize: "0.9rem"  }}> Asian American Cultural Center (AACC) </a> at Yale is is a hub for personal, academic, and professional growth for Yale University students who are interested in learning about the Asian diasporic experience. 
+              I work as an Undergraduate Student Coordinator on the Historical, Artistic, and Cultural Resources team.
+              HACR’s personal motto was “niche”-- not in the sense of something obscure or unknown, but about finding delight in spotlighting the underrepresented. We aim to serve as a bridge between your home and Yale, connecting what you already know to new experiences that celebrate the beautiful diversity of the broader Asian American diaspora. From language to art to food, we’ve got you covered. 
             </p>
           </div>
         </div>
