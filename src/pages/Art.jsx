@@ -6,6 +6,8 @@ export default function Art() {
   const artworks = [
     "mzgallery1.png",
     "mzgallery9.JPG",
+    "GAL1.jpg",
+    "GAL2.png",
     "[GAL3].png",
     "mzgallery6.png",
     "[GAL5].png",
