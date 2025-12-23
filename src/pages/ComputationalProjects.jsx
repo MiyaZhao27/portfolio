@@ -4,13 +4,16 @@ import ShinyEmbed from "../components/ShinyEmbed.jsx";
 export default function ComputationalProjects() {
   const crypticPaper = `${import.meta.env.BASE_URL}The Minute Cryptic Decrypted An Algorithmic Approach to Solving.pdf`;
   const crypticDecrypter = `${import.meta.env.BASE_URL}Minute Cryptic Decrypter.pdf`;
+  const yaleMapsDemoMp4 = `${import.meta.env.BASE_URL}Yale%20Maps.mp4`;
+  const yaleMapsDemoWebm = `${import.meta.env.BASE_URL}Yale%20Maps%20Demo.webm`;
+  const yaleMapsDemoMov = `${import.meta.env.BASE_URL}Yale%20Maps%20Demo.mov`;
 
   const outlineSections = [
     {
       title: "Computational Projects/Websites",
       items: [
-        "The Minute Cryptic Decrypted: An Algorithmic Approach to Solving Wordplay Puzzles",
         "yale-maps",
+        "The Minute Cryptic Decrypted: An Algorithmic Approach to Solving Wordplay Puzzles",
       ]
     },
     {
@@ -151,7 +154,48 @@ export default function ComputationalProjects() {
 
       {/* ===== Computational Projects/Websites ===== */}
       <h2 style={{ textAlign: "left", margin: "1rem 0 2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>Computational Projects/Websites</h2>
-      
+
+      {/* --- yale-maps --- */}
+      <div id="yale-maps" style={{ marginBottom: "3rem" }}>
+        <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Yale-Maps</h3>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            Yale-Maps started as my Catalyst final project, born out of a personal frustration with booking rooms on campus. At Yale, it often feels like every library, practice studio, and cultural center room operates on a completely different booking system. I wanted to build a "one-stop shop" where students could locate exactly what they need in seconds and intuitively.
+          </p>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            Whether you are looking for an empty room to host an event, determining if the Yuttle is actually faster than walking, or searching for the nearest AED, Yale-Maps brings it all together. My goal was to end the era of you looking at ten Google searches that lead to a broken URL by consolidating public data into one reliable space. 
+            Looking ahead to next semester, I hope to recruit a team in the Yale Computer Society to help implement enhanced safety features, integrate live Yuttle tracking data, and actually launch the product online to better serve the evolving needs of the student body.
+          </p>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+          Look below for a video demo of the current functionality!
+          </p>
+          <div style={{ marginTop: "1rem", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+            <video
+              controls
+              preload="metadata"
+              playsInline
+              style={{ width: "100%", maxWidth: "1000px", aspectRatio: "16 / 9", height: "auto", maxHeight: "60vh", borderRadius: "12px", border: "1px solid #333", background: "#111" }}
+            >
+              <source src={yaleMapsDemoMp4} type="video/mp4" />
+              <source src={yaleMapsDemoWebm} type="video/webm" />
+              <source src={yaleMapsDemoMov} type="video/quicktime" />
+              Your browser does not support the video tag.
+            </video>
+
+            <div style={{ marginTop: ".75rem", width: "100%", textAlign: "center" }}>
+              <a
+                href={yaleMapsDemoMp4}
+                target="_blank"
+                rel="noreferrer"
+                style={{ display: "inline-block", padding: ".6rem .9rem", borderRadius: "999px", border: "1px solid #444", background: "#222", color: "#fff", textDecoration: "none" }}
+              >
+                If the video does not play, click here to download! ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* --- The Minute Cryptic --- */}
       <div id="the-minute-cryptic-decrypted-an-algorithmic-approach-to-solving-wordplay-puzzles" style={{ marginBottom: "3rem" }}>
         <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
@@ -210,16 +254,6 @@ export default function ComputationalProjects() {
               </p>
             </object>
           </div>
-        </div>
-      </div>
-
-      {/* --- yale-maps placeholder --- */}
-      <div id="yale-maps" style={{ marginBottom: "3rem" }}>
-        <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>yale-maps</h3>
-          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
-            Coming soon...
-          </p>
         </div>
       </div>
 
