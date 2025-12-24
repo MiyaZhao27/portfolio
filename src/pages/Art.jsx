@@ -129,15 +129,12 @@ export default function Art() {
 
   const outlineSections = [
     {
-      title: "My Lookbook",
-      items: []
-    },
-    {
       title: "Design Work",
       items: [
         "ECAASU",
         "YHHAP Fast",
-        "Publications/Features"
+        "Publications/Features",
+        "My Lookbook"
       ]
     }
   ];
@@ -378,72 +375,26 @@ export default function Art() {
         }
       `}</style>
 
-      <h1 className="art-header"><span className="typewriter-title">Welcome to My Art Gallery!</span></h1>
-      <p style={{ color: "#ddd", lineHeight: "1.6", marginBottom: "-2.5rem",fontSize: "1.1rem", textAlign: "center", maxWidth: "1200px", margin: "0 auto 0.5rem", padding: "0 1rem" }}>This is my digital collection of my recentart and design projects. I'm greatful to have worked on a collection of design projects ranging from designing a mural at the Schwarzman Center, to illustrating for a creative writing publication, to campaigns for the Yale Hunger and Homlessness Action Project. Check it all out below!</p>
-
-      {/* ========== ART GALLERY SECTION ========== */}
-      <div style={{ marginBottom: "5rem" }}>
-        <h2 style={{ textAlign: "left", marginBottom: "1.5rem", marginTop: "1rem", marginLeft: "1rem", marginRight: "1rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
-          My Lookbook
-        </h2>
-
-        <p style={{ color: "#ddd", lineHeight: "1.6", marginBottom: "-3rem",fontSize: "1.1rem", textAlign: "left", maxWidth: "1200px", margin: "0 auto 0.5rem", padding: "0 1rem" }}>
-          Please flip through my lookbook! Enjoy some sketches, painting, photography, and mixed media work :D. You'll find drawings from my sketchbook, architecture problem designs, LOTS of portraits, and some other visual side quests I've been on!
-        </p>
-
-        <div className="lookbook-container">
-          <div className="book-wrapper">
-            <button 
-              className="lookbook-nav-button left" 
-              onClick={goToPrevious}
-              aria-label="Previous page"
-            >
-              ‹
-            </button>
-            
-            <div className="book-page left">
-              <img 
-                src={artworks[currentIndex].src} 
-                alt={`Artwork ${currentIndex + 1}`} 
-                className="lookbook-image"
-              />
-            </div>
-
-            {currentIndex + 1 < artworks.length && (
-              <div className="book-page right">
-                <img 
-                  src={artworks[currentIndex + 1].src} 
-                  alt={`Artwork ${currentIndex + 2}`} 
-                  className="lookbook-image"
-                />
-              </div>
-            )}
-            
-            <button 
-              className="lookbook-nav-button right" 
-              onClick={goToNext}
-              aria-label="Next page"
-            >
-              ›
-            </button>
-          </div>
-        </div>
-        
-        <div className="lookbook-counter">
-          {currentIndex + 1} - {Math.min(currentIndex + 2, artworks.length)} / {artworks.length}
-        </div>
+      {/* ====== PAGE TITLE HEADER ====== */}
+      <div style={{ marginTop: '6rem', marginBottom: '1.5rem', textAlign: 'center' }}>
       </div>
+
+      <h1 className="art-header"><span className="typewriter-title">Welcome to My Art Gallery!</span></h1>
+      <p style={{ color: "#ddd", lineHeight: "1.6", marginBottom: "-2.5rem",fontSize: "1.1rem", textAlign: "center", maxWidth: "1200px", margin: "0 auto 0.5rem", padding: "0 1rem" }}>
+        A collection of art and design projects with a focus on visual storytelling and an emphasis on translating ideas into physical and digital spaces with purpose, including mural design at the Schwarzman Center, illustration for a creative writing publication, and visual campaigns for the Yale Hunger and Homelessness Action Project.
+      </p>
+
 
       {/* ========== DESIGN WORK SECTION ========== */}
       <div style={{ marginBottom: "5rem" }}>
-        <h2 style={{ textAlign: "left", marginTop: "-3rem", marginBottom: "2rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+        <h2 style={{ textAlign: "left", marginTop: "3rem", marginBottom: "2rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
           Design Work
         </h2>
 
         {/* --- ECAASU --- */}
         <div id="ecaasu" style={{ marginBottom: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)" }}>
           <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>ECAASU</h3>
-                  <p style={{ color: "#ddd", lineHeight: "1.6", marginBottom: "-2rem",fontSize: "1.1rem", textAlign: "left", maxWidth: "1200px", margin: "0 auto 0.5rem", padding: "0 1rem" }}>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
                    "The <a href="https://www.ecaasu.org/" target="_blank" rel="noopener noreferrer" style={{ color: "#d64545", textDecoration: "none" }}>East Coast Asian American Student Union (ECAASU)</a> is a 501(c)(3) nonprofit whose mission is to inspire, educate, and empower those interested in Asian, Asian American (A/A) issues. Run solely by volunteers, ECAASU’s advocacy work is conducted through outreach to A/A students and organizations across the country and educating individuals on becoming agents of change through the various programs we hold over the course of the year, including an annual conference."
           I was on the marketing and outreach team when Yale hosted the conference in 2023!</p>
           {/* Instagram-style grid */}
@@ -672,7 +623,7 @@ export default function Art() {
         {/* --- YHHAP Fast --- */}
         <div id="yhhap-fast" style={{ marginBottom: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)" }}>
           <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>YHHAP FAST</h3>
-            <p style={{ color: "#ddd", lineHeight: "1.6", marginBottom: "-2rem",fontSize: "1.1rem", textAlign: "left", maxWidth: "1200px", margin: "0 auto 0.5rem", padding: "0 1rem" }}>
+            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
             "The <a href="https://yhhap.org/yhhap-fast" target="_blank" rel="noopener noreferrer" style={{ color: "#d64545", textDecoration: "none" }}>Yale Hunger and Homeless Action Project</a> Fast is YHHAP’s largest fundraiser of the year, and the largest student-run fundraiser on Yale’s campus. Once every semester, over 50% of the Yale student body donates their Yale Dining meal swipes for the day of the YHHAP Fast ahead of time. During the Fast, students forego their usual dining hall meal and eat out, often at one of the locally owned New Haven businesses that sponsor the Fast through in-kind food donations, lump sums, or student discounts during the Fast. 
             The monetary equivalent of these unused swipes in addition to donations from the Yale and New Haven communities usually total to over $10,000 raised each semester.  A successful Fast is critical for a successful YHHAP, and the fundraiser depends entirely on the support and participation of the broader Yale and New Haven community."
             Over my 3 years in YHHAP, I've experimented with different marketing strategies and designs including memes, a "wrapped" reel, and instruction manuals on Instagram!
@@ -990,7 +941,7 @@ export default function Art() {
         </div>
 
         {/* --- Publications --- */}
-        <div id="publications" style={{ marginBottom: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)" }}>
+        <div id="publications-features" style={{ marginBottom: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)" }}>
           <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Publications/Features</h3>
           
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem", marginTop: "2rem" }}>
@@ -1362,6 +1313,57 @@ export default function Art() {
                 </div>
               </div>
             </a>
+          </div>
+        </div>
+
+        {/* ========== ART GALLERY SECTION ========== */}
+        <div id="my-lookbook" style={{ marginBottom: "3rem", marginLeft: "clamp(1rem, 3vw, 2rem)", marginRight: "clamp(1rem, 3vw, 2rem)" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>My Lookbook</h3>
+
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", marginBottom: "-2rem" }}>
+            Please flip through my lookbook! Enjoy some sketches, painting, photography, and mixed media work :D. You'll find drawings from my sketchbook, architecture problem designs, LOTS of portraits, and some other visual side quests I've been on!
+          </p>
+
+          <div className="lookbook-container">
+            <div className="book-wrapper">
+              <button 
+                className="lookbook-nav-button left" 
+                onClick={goToPrevious}
+                aria-label="Previous page"
+              >
+                ‹
+              </button>
+              
+              <div className="book-page left">
+                <img 
+                  src={artworks[currentIndex].src} 
+                  alt={`Artwork ${currentIndex + 1}`} 
+                  className="lookbook-image"
+                />
+              </div>
+
+              {currentIndex + 1 < artworks.length && (
+                <div className="book-page right">
+                  <img 
+                    src={artworks[currentIndex + 1].src} 
+                    alt={`Artwork ${currentIndex + 2}`} 
+                    className="lookbook-image"
+                  />
+                </div>
+              )}
+              
+              <button 
+                className="lookbook-nav-button right" 
+                onClick={goToNext}
+                aria-label="Next page"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+          
+          <div className="lookbook-counter">
+            {currentIndex + 1} - {Math.min(currentIndex + 2, artworks.length)} / {artworks.length}
           </div>
         </div>
       </div>

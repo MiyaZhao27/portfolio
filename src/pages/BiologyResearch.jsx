@@ -36,30 +36,6 @@ export default function BiologyResearch() {
     height: "500px",
   };
 
-  const sectionStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    gap: "clamp(1rem, 4vw, 2rem)",
-    flexWrap: "wrap",
-    marginBottom: "clamp(2rem, 6vw, 4rem)",
-  };
-
-  const textStyle = {
-    flex: "1 1 300px",
-    color: "#ddd",
-    lineHeight: "1.6",
-    fontSize: "1.05rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-  };
-
-  const pdfContainer = {
-    flex: "1 1 600px",
-    maxWidth: "100%",
-  };
-
   const containerStyle = {
     background: "#222",
     color: "#fff",
@@ -162,9 +138,7 @@ export default function BiologyResearch() {
           textAlign: "center",
         }}
       >
-        A collection of research projects exploring synthetic biology,
-        environmental microbiology, neurobiology, statistical modeling, and data visualization.
-      </p>
+        A collection of research projects spanning synthetic biology, environmental microbiology, neurobiology, statistical modeling, and data visualization, with a focus on asking clear questions and turning data into insight.      </p>
 
       {/* ========== BIOLOGY RESEARCH SECTION ========== */}
       <div style={{ marginBottom: "5rem" }}>
@@ -173,38 +147,63 @@ export default function BiologyResearch() {
         </h2>
 
       {/* ========== iGEM PROJECT SECTION ========== */}
-      <div style={{ marginBottom: "5rem" }}>
+      <div id="igem-project" style={{ marginBottom: "5rem" }}>
         <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>
           2023-2025 iGEM Project: Click. Customize. Catalyze. 
         </h3>  
-        <h5 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "1.5rem" }}>
-          A Systematic Approach to Site Specific Enzyme Functionalization
-        </h5>
 
         {/* --- iGEM Wiki Subsection --- */}
-        <div id="yale-igem-wiki" style={{ width: "100%", margin: "0 auto 4rem" }}>
+        <div style={{ width: "100%", margin: "0 auto 4rem" }}>
         
-        <div className="ep-sub" style={{ textAlign: "left", marginBottom: "1rem", lineHeight: "1.7" }}>
-          <p style={{ marginBottom: "1rem" }}>
+        <div style={{ textAlign: "left", marginBottom: "1rem" }}>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", marginBottom: "0.75rem" }}>
+            <strong>A Systematic Approach to Site Specific Enzyme Functionalization</strong><br />
             In 2025, I competed with the Yale iGEM Team, which earned Yale's first gold medal at the International Genetically Engineered Machine (iGEM) competition since the university's debut in 2011.
           </p>
-          <p style={{ marginBottom: "1rem" }}>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", marginBottom: "0.75rem" }}>
             The iGEM Jamboree is the world's leading undergraduate synthetic biology competition, bringing together over 400 teams from 45 countries to tackle global challenges in sustainability, healthcare, and food security. Our team, mentored by Dr. Maria Moreno and the Farren Isaacs Lab, presented a novel pipeline for systematic protein functionalization through targeted non-standard amino acid incorporation.
           </p>
-          <p style={{ marginBottom: "1rem" }}>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", marginBottom: "0.75rem" }}>
             We demonstrated this pipeline through the case study of L-asparaginase, a chemotherapeutic enzyme limited by short half-life and immunogenicity. By site-specifically incorporating non-standard amino acids as chemical "hooks," we explored ways to extend its half-life using palmitic acid conjugation. Alongside the wet lab work, I helped develop a machine learning model integrating molecular dynamics simulations and experimental results to predict promising edit sites and identify structural patterns in protein engineering.
           </p>
-          <p style={{ marginBottom: "1rem" }}>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", marginBottom: "0.75rem" }}>
             Beyond the bench, I also contributed to our team's human practices and outreach initiatives:
           </p>
-          <ul style={{ marginLeft: "1.5rem", marginBottom: "1rem" }}>
+          <ul style={{ marginLeft: "1.5rem", marginBottom: "0.75rem" }}>
             <li><strong>You Are What You Fund (YAWF)</strong>: a global survey exploring how public perceptions of biotech shape funding priorities.</li>
             <li><strong>60 Second Scientist</strong>: a series of short animated explainers on molecular biology techniques.</li>
             <li><strong>Build-A-Protein Workshop</strong>: a hands-on educational program that engaged over 150 New Haven students in synthetic biology.</li>
           </ul>
-          <p>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
             Through my two yeares in iGEM, I combined research, design, and community engagement to better understand scientific communication, interdisciplinary collaboration, and project execution.
           </p>
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "row", gap: "2rem", flexWrap: "wrap", marginBottom: "2rem" }}>
+          <div style={{ flex: "1 1 calc(50% - 1rem)", minWidth: "300px" }}>
+            <h4 style={{ fontSize: "1.25rem", marginBottom: "1rem", color: "#fff" }}>Summer 2023 Wet Lab Findings</h4>
+            <object data={paper1} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={paper1} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
+          <div style={{ flex: "1 1 calc(50% - 1rem)", minWidth: "300px" }}>
+            <h4 style={{ fontSize: "1.25rem", marginBottom: "1rem", color: "#fff" }}>MAAS Journal Publication</h4>
+            <object data={maasJournal} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={maasJournal} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
         </div>
         <iframe
           src="https://2025.igem.wiki/yale/"
@@ -238,60 +237,16 @@ export default function BiologyResearch() {
           </a>
         </div>
         </div>
-
-        {/* --- Summer 2023 Wet Lab Findings --- */}
-        <div id="summer-2023-wet-lab-findings" style={sectionStyle} className="section-responsive">
-          <div style={pdfContainer} className="pdf-container-responsive">
-            <object data={paper1} type="application/pdf" style={frameStyle}>
-              <p>
-                Unable to display PDF.{" "}
-                <a href={paper1} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
-                  Click here to open it
-                </a>
-                .
-              </p>
-            </object>
-          </div>
-
-          <div style={{ ...textStyle, textAlign: "left", alignItems: "flex-start" }} className="text-responsive">
-            <p>
-              <strong style={{ fontSize: "1.5rem", display: "block", marginBottom: "0.5rem" }}>Summer 2023 Wet Lab Findings</strong>
-              My initial wet lab research from summer 2023 focused on identifying non-standard amino acid incorporation sites for half-life extension of chemotherapeutic L-asparaginase. We conducted initial research in site-selection through a series of mutation techniques, cloning, and expression optimization for bioactivity testing, laying the groundwork for our iGEM project.
-            </p>
-          </div>
-        </div>
-
-        {/* --- MAAS Journal Publication --- */}
-        <div id="maas-journal-publication" style={{ ...sectionStyle, flexDirection: "row-reverse" }} className="section-responsive">
-          <div style={pdfContainer} className="pdf-container-responsive">
-            <object data={maasJournal} type="application/pdf" style={frameStyle}>
-              <p>
-                Unable to display PDF.{" "}
-                <a href={maasJournal} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
-                  Click here to open it
-                </a>
-                .
-              </p>
-            </object>
-          </div>
-
-          <div style={{ ...textStyle, textAlign: "left", alignItems: "flex-start" }} className="text-responsive">
-            <p>
-              <strong style={{ fontSize: "1.5rem", display: "block", marginBottom: "0.5rem" }}>MAAS Journal Publication</strong>
-              Our team's research pipeline for systematic protein functionalization through non-standard amino acid incorporation was published in the MAAS Journal. This publication details our complete methodology, experimental results, and the machine learning model we developed to predict promising edit sites for protein engineering applications.
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* ========== INCREASING BIOAVAILABILITY OF ANTHOCYANIN SECTION ========== */}
-      <div style={{ marginBottom: "5rem" }}>
+      <div id="increasing-bioavailability-of-anthocyanin-in-daucus-carota" style={{ marginBottom: "5rem" }}>
         <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>
           Increasing Bioavailability of Anthocyanin in Daucus carota
         </h3>
 
       {/* --- Research Paper --- */}
-      <div id="how-does-one-make-a-carrot-as-nutritious-as-a-blueberry" style={{ marginBottom: "3rem" }}>
+      <div style={{ marginBottom: "3rem" }}>
         <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
             <strong>How Does One Make a Carrot as Nutritious as a Blueberry?</strong><br />
@@ -320,13 +275,13 @@ export default function BiologyResearch() {
       </div>
 
       {/* ========== ISOLATION OF PLASTIC DEGRADING BACTERIA SECTION ========== */}
-      <div style={{ marginBottom: "5rem" }}>
+      <div id="isolation-of-plastic-degrading-bacteria" style={{ marginBottom: "5rem" }}>
         <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>
           Isolation of Plastic Degrading Bacteria
         </h3>
 
       {/* --- Research Paper --- */}
-      <div id="does-gas-station-soil-contain-plastic-degrading-bacteria" style={{ marginBottom: "3rem" }}>
+      <div style={{ marginBottom: "3rem" }}>
         <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
             <strong>Does Gas Station Soil Contain Plastic-Degrading Bacteria?</strong><br />
@@ -350,13 +305,13 @@ export default function BiologyResearch() {
       </div>
 
       {/* ========== PRG'S EFFECT ON LPA RECEPTION IN NEURONS SECTION ========== */}
-      <div style={{ marginBottom: "5rem" }}>
+      <div id="prg-s-effect-on-lpa-reception-in-neurons" style={{ marginBottom: "5rem" }}>
         <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>
           PRG's Effect on LPA Reception in Neurons
         </h3>
 
       {/* --- Research Paper --- */}
-      <div id="how-do-axons-know-where-to-go" style={{ marginBottom: "3rem" }}>
+      <div style={{ marginBottom: "3rem" }}>
         <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", marginBottom: "1rem", textAlign: "left" }}>
             <strong>How Do Axons Know Where to Go?</strong><br />

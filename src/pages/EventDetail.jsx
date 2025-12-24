@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
 // Event data - you can expand this later
@@ -187,7 +188,7 @@ const eventData = {
       `${import.meta.env.BASE_URL}[BB4].png`,
       `${import.meta.env.BASE_URL}[BB5].png`,
     ],
-    content: `For PAHM, we hosted a South Asian jewelry-making session led by Hilal's mom, who has the best taste in beads. It was a super homey afternoon where we learned the actual mechanics of jewelry making—everything from weaving and beading to bending metal for bangles. There's something about working with your hands that makes small talk feel so natural. Plus, we had some "buss" mango juice to keep the energy up while we crafted.`,
+    content: `For PAHM, we hosted a South Asian jewelry-making session led by Hilal's mom, who has the best taste in beads. It was a super homey afternoon where we learned the actual mechanics of jewelry making—everything from weaving and beading to bending metal for bangles. There's something about working with your hands that makes small talk feel so natural. Plus, we had some buss mango juice to keep the energy up while we crafted.`,
   },
   "sok-song-vending": {
     title: "Sok Song Origami Vending Machine Soft Launch",
@@ -228,9 +229,8 @@ const eventData = {
     title: "Asian American Clothing Cafe (AACC)",
     date: "November 16, 2025",
     club: "HACR 2025-2026",
-    coverImage: `${import.meta.env.BASE_URL}[AACC1].png`,
+    coverImage: `${import.meta.env.BASE_URL}[AACC2].png`,
     images: [
-      `${import.meta.env.BASE_URL}[AACC1].png`,
       `${import.meta.env.BASE_URL}[AACC2].png`,
     ],
     content: `At our first opening of the Asian American Clothing Cafe, students brought in their own worn-out clothes, and we provided the tools and instructions to upcycle and repair them. With hot tea in hand and a DIY spirit, it was the perfect way to reject throwaway culture and learn the value of sustainability. We provided a sewing machine and plenty of sashiko visible mending patches!`,
@@ -291,6 +291,11 @@ export default function EventDetail() {
   const { eventId } = useParams();
   const event = eventData[eventId];
 
+  // Scroll to top when component mounts or eventId changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [eventId]);
+
   if (!event) {
     return (
       <div style={{ padding: "2rem", textAlign: "center", color: "#fff" }}>
@@ -314,13 +319,6 @@ export default function EventDetail() {
   const contentStyle = {
     maxWidth: "1200px",
     margin: "0",
-  };
-
-  const imageGridStyle = {
-    display: "flex",
-    flexDirection: "column",
-    gap: "0",
-    marginBottom: "2rem",
   };
 
   return (

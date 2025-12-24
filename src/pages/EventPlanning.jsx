@@ -333,8 +333,9 @@ export default function EventPlanning() {
       <div style={contentStyle} className="project-content">
       <h1 className="ep-header"><span className="typewriter-title">Welcome to My Events Archive!</span></h1>
       <p className="ep-sub" style={{ marginBottom: "3rem", textAlign: "center" }}>
-        I wanted to give some big highlights to the clubs and organizations that shaped my college experience.
-        Between working at the Asian American Cultural Center, helping run the Chinese American Student Association, and other explorations here and there, event planning became a huge part of my college experience. Here I want to showcase and celebrate culture and community on campus.
+        I wanted to highlight the clubs and organizations that shaped my college experience. 
+        Through my work at the Asian American Cultural Center, leadership in the Chinese American Students Association, and other campus initiatives, 
+        event planning became a core part of how I built and celebrated culture and community at Yale.
       </p>
 
       {/* ========== CASA SECTION ========== */}
@@ -353,9 +354,8 @@ export default function EventPlanning() {
             />
           </div>
           <div style={{ flex: "1 1 300px", color: "#ddd", lineHeight: "1.6" }}>
-            <p style={{ fontSize: "0.9rem" }}>
-            The <a href="https://www.yalecasa.org/" target="_blank" rel="noopener noreferrer" style={{ color: "#d64545", textDecoration: "none", fontSize: "0.9rem"  }}>Chinese American Students Association (CASA)</a> is one of Yale's largest and most active undergraduate organizations with over 900 members. CASA serves as a home for all members of the Yale community, bringing together students of all backgrounds to celebrate Chinese American culture, identity, and experiences. The CASA Board organizes various cultural, political, and social events each year, including the annual Lunar Ball, Cultural Show, Hot Pot Nights, community discussions, and speaker events.
-            I've had the pleasure of serving as a First Year Liason, Cultural Chair, then Co-President. Here are some of the events I helped plan and execute during my time with CASA.
+            <p style={{ fontSize: "0.95rem", textAlign: "left" }}>
+            The <a href="https://www.yalecasa.org/" target="_blank" rel="noopener noreferrer" style={{ color: "#d64545", textDecoration: "none", fontSize: "0.95rem"  }}>Chinese American Students Association (CASA)</a> is one of Yale’s largest undergraduate organizations, with over 900 members. It serves as a home for students of all backgrounds to come together and celebrate Chinese American culture, identity, and experiences. Each year, the CASA Board organizes a wide range of cultural, political, and social events, including Lunar Ball, Cultural Show, Hot Pot Nights, community discussions, and speaker events. I served as a First Year Liaison, Cultural Chair, and later Co-President, and below are some of the events I helped plan and execute during my time with CASA.
             </p>
           </div>
         </div>
