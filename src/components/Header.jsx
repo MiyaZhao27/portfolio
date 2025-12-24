@@ -104,10 +104,10 @@ export default function Header() {
 
         <nav className="header-nav" style={{ display: "flex", gap: "1rem" }}>
           {link("/", "Home")}
-          {link("/computational-projects", "Computational Projects")}
+          {link("/computational-projects", "Projects")}
           {link("/biology-research", "Research")}
-          {link("/event-planning", "Events Archive")}
-          {link("/art", "Art Gallery")}
+          {link("/event-planning", "Events")}
+          {link("/art", "Design")}
         </nav>
 
         <button
