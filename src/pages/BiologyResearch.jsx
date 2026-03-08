@@ -177,6 +177,9 @@ export default function BiologyResearch() {
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
             Through my two yeares in iGEM, I combined research, design, and community engagement to better understand scientific communication, interdisciplinary collaboration, and project execution.
           </p>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            We are currently writing our manuscript to be published in Frontiers' Technological Advancements in Engineering: From Production to AI and Software this year!
+          </p>
         </div>
 
         <div style={{ display: "flex", flexDirection: "row", gap: "2rem", flexWrap: "wrap", marginBottom: "2rem" }}>

@@ -37,14 +37,13 @@ export default function App() {
             Welcome to my Portfolio! 
           </p>
           <p className="ep-sub">
-            I'm a third-year pursuing my Bachelors of Science in Statistics and Data Science with a Certificate in Programming at Yale University.
+            I’m a third-year at Yale University pursuing a B.S. in Statistics and Data Science with a Certificate in Programming. My work is driven by a simple idea: technology should make complex systems accessible and intuitive for the people who use them.
           </p>
           <p className="ep-sub">
-            My diverse experience in research development, the visual arts, education, and event planning has been instrumental in shaping my skill set and passion for bringing things from  <strong> ideation to implementation</strong>. The core principles that guide me and the roles I take on include <strong>creativity, a people-first mindset, and accessibility</strong>. 
-            This commitment to turning vision into reality <strong>with intentionality</strong> is what drives my interest in Product Management, particularly within (Bio)Tech Development, Strategy, and Data Analytics. I want to do work that solves real-world problems with high effort and attention to detail no matter the scale of the project.
+            Growing up in an immigrant household, I often helped my family navigate forms, services, and online systems that weren’t designed with their needs in mind. Those experiences showed me how frustrating everyday systems can be when they ignore the user, and how powerful thoughtful technology can be in lowering barriers and connecting people to the resources they need. That perspective shapes the projects I pursue and the solutions I build today.
           </p>
           <p className="ep-sub">
-            This portfolio is a documentation of the work I'm most proud of, showcasing how concepts are translated into <strong>tangible products and initiatives designed to thrive</strong>.
+            My diverse experience in research, product development, and community engagement has shaped my skill set and passion for bringing ideas from ideation to implementation. At Yale, I’ve applied this through projects like Yale Maps, leading the iGEM synthetic biology team, and contributing to initiatives with the Asian American Cultural Center. The principles that guide me, creativity, a people-first mindset, and accessibility, drive my interest in Product Management, particularly within (Bio)Tech Development, Strategy, and Data Analytics. I aim to solve real-world problems with focus, intentionality, and attention to detail.
           </p>
         </div>
       </div>
