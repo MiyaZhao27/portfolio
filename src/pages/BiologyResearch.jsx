@@ -6,8 +6,17 @@ export default function BiologyResearch() {
   const paper3 = `${import.meta.env.BASE_URL}Isolation and Identification of Plastic-Degrading and Oil-Degrading Bacteria In a Soil Sample.pdf`;
   const paper4 = `${import.meta.env.BASE_URL}PRG2’s Effect on LPA Reception in Neurons (2).pdf`;
   const maasJournal = `${import.meta.env.BASE_URL}maas-journal.pdf`;  const happinessPaper = `${import.meta.env.BASE_URL}Analysis of World Happiness Trends.pdf`;
+  const graduationTrendsPaper = `${import.meta.env.BASE_URL}363_Final_Project (1) (2).pdf`;
   const covidPaper = `${import.meta.env.BASE_URL}COVID-19 Steady State Modeling.pdf`;
   const outlineSections = [
+    {
+      title: "Data Analytics Research",
+      items: [
+        "Analysis of Graduation Trends in Portuguese Higher Education",
+        "Analysis of World Happiness Trends",
+        "COVID-19 Steady State Modeling",
+      ]
+    },
     {
       title: "Biology Research",
       items: [
@@ -17,13 +26,6 @@ export default function BiologyResearch() {
         "PRG's Effect on LPA Reception in Neurons",
       ]
     },
-    {
-      title: "Data Analytics Research",
-      items: [
-        "Analysis of World Happiness Trends",
-        "COVID-19 Steady State Modeling",
-      ]
-    }
   ];
 
   const frameStyle = {
@@ -138,8 +140,91 @@ export default function BiologyResearch() {
           textAlign: "center",
         }}
       >
-        A collection of research projects spanning synthetic biology, environmental microbiology, neurobiology, statistical modeling, and data visualization, with a focus on asking clear questions and turning data into insight.      </p>
+        A collection of research projects spanning synthetic biology, environmental microbiology, neurobiology, statistical modeling, and data visualization, with a focus on asking clear questions and turning data into insight.
+      </p>
 
+      {/* ========== DATA ANALYTICS RESEARCH SECTION ========== */}
+      <div style={{ marginBottom: "5rem" }}>
+        <h2 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
+          Data Analytics Research
+        </h2>
+
+        {/* --- Paper 0 --- */}
+        <div id="analysis-of-graduation-trends-in-portuguese-higher-education" style={{ marginBottom: "3rem" }}>
+          <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Analysis of Graduation Trends in Portuguese Higher Education</h3>
+            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+              Driven by the reality that many capable students drop out because universities react to failure rather than preventing it, this study investigates whether student retention can be predicted early in an academic trajectory using performance and demographic signals. Analyzing a dataset from Portuguese higher education, the research addresses three central questions: what key factors contribute most to student dropout, how accurately can these outcomes be predicted before it is too late, and which specific variables, such as first-year academic performance, financial debt, or scholarship status, are most influential in distinguishing students who graduate from those who leave?
+            </p>
+          </div>
+          <div style={{ width: "100%" }}>
+            <object data={graduationTrendsPaper} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={graduationTrendsPaper} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
+        </div>
+
+        {/* --- Paper 1 --- */}
+        <div id="analysis-of-world-happiness-trends" style={{ marginBottom: "3rem" }}>
+          <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Analysis of World Happiness Trends</h3>
+            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+              This analytics report explores global happiness survey data over multiple years to identify key socioeconomic factors driving well-being. Using regression modeling and correlation analysis, it highlights that social support, healthy life expectancy, perceptions of corruption, and emotional well-being are the strongest predictors of life satisfaction, while factors like generosity show little impact. The study also reveals regional differences, emphasizing how location and living conditions shape happiness. Visualizations were created using R packages like ggplot2.
+            </p>
+          </div>
+          <div style={{ width: "100%" }}>
+            <object data={happinessPaper} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={happinessPaper} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
+        </div>
+
+        {/* --- Paper 2 --- */}
+        <div id="covid-19-steady-state-modeling" style={{ marginBottom: "3rem" }}>
+          <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>COVID-19 Steady State Modeling</h3>
+            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+              In 2020, the COVID-19 pandemic irreversibly changed global health, economies, and daily life. Four years later, shifts from
+              rapid response to immediate outbreaks to dealing with the virus's long-term effects led to new important questions: Will
+              COVID-19 infection rates settle down over time, and what factors will influence their long-term behavior? Additionally,
+              can we use sporadic updates to predict daily new cases in order to more accurately track the progression of cumulative
+              cases of COVID through a population? Answering these questions is crucial for future public health strategies and the
+              ever growing impact of airborne infections. This project uses linear algebra methods, specifically Markov chains with
+              steady-state analysis and least-square approximation, to study and predict how COVID-19 infection rates might change
+              over given time periods. Markov chains model the chances of moving between different stages of infection, allowing us to
+              find steady states of infection rates and make important assumptions. Additionally, these matrices allow for individualized
+              probability predictions after a certain time frame (transitions). On the other hand, least-square approximation provides a
+              way to determine COVID-19 cases more accurately in broader data sets, which is useful when COVID-19 data is tracked
+              at larger time intervals. By combining these mathematical tools, this study aims to determine the future of COVID-19
+              in our population.
+            </p>
+          </div>
+          <div style={{ width: "100%" }}>
+            <object data={covidPaper} type="application/pdf" style={frameStyle}>
+              <p>
+                Unable to display PDF.{" "}
+                <a href={covidPaper} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
+                  Click here to open it
+                </a>
+                .
+              </p>
+            </object>
+          </div>
+        </div>
+      </div>
+      
       {/* ========== BIOLOGY RESEARCH SECTION ========== */}
       <div style={{ marginBottom: "5rem" }}>
         <h2 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
@@ -329,7 +414,7 @@ export default function BiologyResearch() {
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", marginBottom: "1rem", textAlign: "left" }}>
             While literature suggests PRG2 should suppress the LPA-induced RhoA/ROCK signaling pathway and reduce neurite retraction, our preliminary findings showed that PRG2-overexpressing cells were just as likely to round in response to LPA treatment. These results point toward a more complex relationship between PRG2 and LPA signaling than previously assumed.
           </p>
-          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", marginBottom: "1rem", textAlign: "left" }}>
             This project, which I presented at the South Carolina Junior Academy of Sciences, reflects my broader interest in how molecular interactions shape neuronal development and how these mechanisms might inform treatments for neuropathic pain and neurodegenerative disorders such as multiple sclerosis.
           </p>
         </div>
@@ -345,67 +430,6 @@ export default function BiologyResearch() {
           </object>
         </div>
       </div>
-      </div>
-
-      {/* ========== DATA ANALYTICS RESEARCH SECTION ========== */}
-      <div style={{ marginBottom: "5rem" }}>
-        <h2 style={{ textAlign: "left", marginBottom: "2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>
-          Data Analytics Research
-        </h2>
-
-        {/* --- Paper 1 --- */}
-        <div id="analysis-of-world-happiness-trends" style={{ marginBottom: "3rem" }}>
-          <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-            <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Analysis of World Happiness Trends</h3>
-            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
-              This analytics report explores global happiness survey data over multiple years to identify key socioeconomic factors driving well-being. Using regression modeling and correlation analysis, it highlights that social support, healthy life expectancy, perceptions of corruption, and emotional well-being are the strongest predictors of life satisfaction, while factors like generosity show little impact. The study also reveals regional differences, emphasizing how location and living conditions shape happiness. Visualizations were created using R packages like ggplot2.
-            </p>
-          </div>
-          <div style={{ width: "100%" }}>
-            <object data={happinessPaper} type="application/pdf" style={frameStyle}>
-              <p>
-                Unable to display PDF.{" "}
-                <a href={happinessPaper} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
-                  Click here to open it
-                </a>
-                .
-              </p>
-            </object>
-          </div>
-        </div>
-
-        {/* --- Paper 2 --- */}
-        <div id="covid-19-steady-state-modeling" style={{ marginBottom: "3rem" }}>
-          <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-            <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>COVID-19 Steady State Modeling</h3>
-            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
-              In 2020, the COVID-19 pandemic irreversibly changed global health, economies, and daily life. Four years later, shifts from
-              rapid response to immediate outbreaks to dealing with the virus's long-term effects led to new important questions: Will
-              COVID-19 infection rates settle down over time, and what factors will influence their long-term behavior? Additionally,
-              can we use sporadic updates to predict daily new cases in order to more accurately track the progression of cumulative
-              cases of COVID through a population? Answering these questions is crucial for future public health strategies and the
-              ever growing impact of airborne infections. This project uses linear algebra methods, specifically Markov chains with
-              steady-state analysis and least-square approximation, to study and predict how COVID-19 infection rates might change
-              over given time periods. Markov chains model the chances of moving between different stages of infection, allowing us to
-              find steady states of infection rates and make important assumptions. Additionally, these matrices allow for individualized
-              probability predictions after a certain time frame (transitions). On the other hand, least-square approximation provides a
-              way to determine COVID-19 cases more accurately in broader data sets, which is useful when COVID-19 data is tracked
-              at larger time intervals. By combining these mathematical tools, this study aims to determine the future of COVID-19
-              in our population.
-            </p>
-          </div>
-          <div style={{ width: "100%" }}>
-            <object data={covidPaper} type="application/pdf" style={frameStyle}>
-              <p>
-                Unable to display PDF.{" "}
-                <a href={covidPaper} target="_blank" rel="noreferrer" style={{ color: "#9bd" }}>
-                  Click here to open it
-                </a>
-                .
-              </p>
-            </object>
-          </div>
-        </div>
       </div>
       </div>
       </div>

@@ -12,6 +12,8 @@ export default function ComputationalProjects() {
     {
       title: "Computational Projects/Websites",
       items: [
+        "suiteease",
+        "quickbyte",
         "yale-maps",
         "The Minute Cryptic Decrypted: An Algorithmic Approach to Solving Wordplay Puzzles",
       ]
@@ -21,7 +23,7 @@ export default function ComputationalProjects() {
       items: [
         "Finding Home: Visualizing Property Values Along the Metro-North Line",
         "L-Asparaginase Feature Analysis Dashboard",
-        "EV Charging Station Explorer",
+        "Stormont Vail Health Patient Journey Viewer (2026 ASA DataFest Best Business Value Award)",
       ]
     }
   ];
@@ -52,6 +54,16 @@ export default function ComputationalProjects() {
     maxWidth: "none",
   };
 
+  const previewFrameStyle = {
+    width: "100%",
+    height: "525px",
+    border: "1px solid #333",
+    borderRadius: "12px",
+    background: "#111",
+    marginTop: "1rem",
+    marginBottom: "1rem",
+  };
+
   const apps = [
     {
       name: "Finding Home: Visualizing Property Values Along the Metro-North Line",
@@ -68,10 +80,12 @@ export default function ComputationalProjects() {
       height: 820,
     },
     {
-      name: "EV Charging Station Explorer",
-      url: "https://mz27.shinyapps.io/EVshinyapp/",
-      desc:
-        "This project is an interactive Shiny app designed to help users explore EV charging stations across the United States. Users can filter stations by state, network, opening date, charging level, and availability, and view results on an interactive Leaflet map with clear visual markers. The project was completed as a homework assignment but felt particularly relevant given the growing support for electric vehicles and government subsidies encouraging their adoption. The app allows for easy identification of convenient, accessible charging locations, helping users plan routes and evaluate infrastructure availability.",
+      name: "Stormont Vail Health Patient Journey Viewer",
+      url: "https://statistics.yale.edu/posts/2026-04-23-sds-majors-win-best-business-value-at-2026-asa-datafest",
+      desc1:
+        "Co-developed an interactive dashboard for healthcare providers to track and aggregate longitudinal patient encounters across fragmented hospital billing codes. The tool ties together clinical events, like linking an initial diagnostic X-ray to later physical therapy sessions, into a single, fluid timeline. By delivering dynamic summary statistics based on visits, medical codes, and comprehensive timelines, the application helps doctors quickly digest a patient's full medical history. Crucially, we designed the platform to benchmark individual journey lengths against overall hospital norms. This allows clinicians to audit their own care pathways for potential socio-demographic biases and identify if structural barriers, such as a patient's geographic location, are causing dropped check-ins or delayed care.",
+      desc2:
+        "(Data Protected by ASA)",
       height: 820,
     },
   ];
@@ -154,12 +168,122 @@ export default function ComputationalProjects() {
       {/* ===== Computational Projects/Websites ===== */}
       <h2 style={{ textAlign: "left", margin: "1rem 0 2rem", fontSize: "2rem", borderBottom: "2px solid #d64545", paddingBottom: "0.5rem" }}>Computational Projects/Websites</h2>
 
+      {/* --- SuiteEase --- */}
+      <div id="suiteease" style={{ marginBottom: "3rem" }}>
+        <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.35rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>SuiteEase (YHacks 2026)</h3>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            SuiteEase was born from a simple, relatable frustration: the way small, uncoordinated chores and shared expenses quietly build tension among roommates who genuinely care about each other. Realizing the issue wasn't a lack of effort but a lack of coordination, we developed a shared platform that began as a basic task tracker and grew to feature persistent databases, shared shopping lists, receipt scanning, and flexible expense splitting.
+          </p>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            Along the way, we navigated the technical and collaborative hurdles of constant merge conflicts and the difficult design choice of keeping the interface clean rather than overwhelming it with features. Ultimately, SuiteEase is a project rooted in our own daily lives, designed to take the mental load out of everyday responsibilities so that keeping a home running smoothly feels shared, fair, and less stressful because loving is easy when everyone does their part.
+          </p>
+          <iframe
+            src="https://yhack2026-nu.vercel.app/"
+            title="SuiteEase Site Preview"
+            style={previewFrameStyle}
+          />
+          <div style={{ marginTop: "1rem", textAlign: "center", display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
+            <a
+              href="https://devpost.com/software/suiteease"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-block",
+                padding: ".6rem .9rem",
+                borderRadius: "999px",
+                border: "1px solid #444",
+                background: "#222",
+                color: "#fff",
+                textDecoration: "none",
+              }}
+            >
+              View on Devpost ↗
+            </a>
+            <a
+              href="https://yhack2026-nu.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-block",
+                padding: ".6rem .9rem",
+                borderRadius: "999px",
+                border: "1px solid #444",
+                background: "#222",
+                color: "#fff",
+                textDecoration: "none",
+              }}
+            >
+              SuiteEase ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* --- QuickByte --- */}
+      <div id="quickbyte" style={{ marginBottom: "3rem" }}>
+        <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.35rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>QuickByte (Uncommon Hacks 2026)</h3>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", fontStyle: "italic", marginBottom: "1rem" }}>
+            
+          </p>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            QuickByte came out of our experience growing up as a restaurant kids, watching my family run our takeout place and seeing firsthand how broken and expensive traditional POS systems are for small businesses. To fix that, we built a free, open-source platform that runs on any everyday device a family-run spot already owns, splitting the workflow into four intuitive views for cashiers, the kitchen line, packers, and managers, along with built-in translation support to help multilingual teams communicate better.
+          </p>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
+            We designed it around real operational troubles, adding an OCR scanner so staff can just snap a photo of a third-party delivery receipt to instantly log the order, and a smart kitchen view that batches identical dishes together so cooks can work smarter during a rush.
+          </p>
+          <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", fontStyle: "italic", marginBottom: "1rem" }}>
+            To test our view... you're the manager! username: pho password: 12345
+          </p>
+          <iframe
+            src="https://quick-byte-drab.vercel.app/"
+            title="QuickByte Site Preview"
+            style={previewFrameStyle}
+          />
+          <div style={{ marginTop: "1rem", textAlign: "center", display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
+            <a
+              href="https://devpost.com/software/quick-byte"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-block",
+                padding: ".6rem .9rem",
+                borderRadius: "999px",
+                border: "1px solid #444",
+                background: "#222",
+                color: "#fff",
+                textDecoration: "none",
+              }}
+            >
+              View on Devpost ↗
+            </a>
+            <a
+              href="https://quick-byte-drab.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-block",
+                padding: ".6rem .9rem",
+                borderRadius: "999px",
+                border: "1px solid #444",
+                background: "#222",
+                color: "#fff",
+                textDecoration: "none",
+              }}
+            >
+              QuickByte ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* --- yale-maps --- */}
       <div id="yale-maps" style={{ marginBottom: "3rem" }}>
         <div style={{ marginBottom: "1.5rem", textAlign: "left" }}>
-          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Yale-Maps</h3>
+          <h3 style={{ fontSize: "1.5rem", marginBottom: "0.75rem", textAlign: "left", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>Yale-Maps (Yale Computer Society Catalyst Final Project) </h3>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
-            Yale-Maps started as my Catalyst final project, born out of frustration with the current room booking systems on campus. At Yale, it often feels like every library, practice studio, and cultural center room operates on a completely different website. I wanted to build a "one-stop shop" where students could locate exactly what they need in seconds and intuitively.
+            At Yale, it often feels like every library, practice studio, and cultural center room operates on a completely different website. I wanted to build a "one-stop shop" where students could locate exactly what they need in seconds and intuitively.
           </p>
           <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>
             Whether you are looking for an empty room to host an event, determining if the Yuttle is actually faster than walking, or searching for the nearest AED, Yale-Maps brings it all together. My goal was to end the era of you looking at ten Google searches that lead to a broken URL by consolidating public data into one reliable space. 
@@ -264,7 +388,12 @@ export default function ComputationalProjects() {
           return (
           <div key={i} id={sectionId} style={{ width: "100%", margin: "0 auto" }}>
             <h3 style={{ textAlign: "left", marginBottom: "0.5rem", borderBottom: "1px solid #fff", paddingBottom: "0.5rem" }}>{a.name}</h3>
-            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", marginBottom: "1rem" }}>{a.desc}</p>
+            <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left" }}>{a.desc1 ?? a.desc}</p>
+            {a.desc2 ? (
+              <p style={{ color: "#ddd", lineHeight: "1.6", fontSize: "1.05rem", textAlign: "left", marginTop: 0, marginBottom: "1rem" }}>
+                {a.desc2}
+              </p>
+            ) : null}
             <ShinyEmbed url={a.url} title={a.name} height={a.height} />
             <div style={{ textAlign: "center", marginTop: ".75rem" }}>
               <a

@@ -3,6 +3,78 @@ import { Link, useParams } from "react-router-dom";
 
 // Event data - you can expand this later
 const eventData = {
+  "sea-of-flavors": {
+    title: "A SEA of Flavors",
+    date: "January 29, 2026",
+    club: "HACR 2025-2026",
+    coverImage: `${import.meta.env.BASE_URL}SEA-2.JPG`,
+    images: [
+      `${import.meta.env.BASE_URL}SEA-1.png`,
+      `${import.meta.env.BASE_URL}SEA-2.JPG`,
+      `${import.meta.env.BASE_URL}SEA-3.JPG`,
+      `${import.meta.env.BASE_URL}SEA-4.JPG`,
+      `${import.meta.env.BASE_URL}SEA-5.JPG`,
+    ],
+    content: `Welcome to the SEA of Flavors! Here, the AACC and affiliate orgs will serve and discuss Southeast Asian foods resulting from cultural osmosis under colonial regimes. Through this event, we hope to highlight the impact colonization had on Southeast Asia, and how food has been used as a means of resistance by colonized peoples. Come for bingo, amazing food, and explore intercultural histories.`,
+  },
+  "monthly-movie-night-a-wedding-banquet": {
+    title: "Monthly Movie Night: A Wedding Banquet",
+    date: "February 2, 2026",
+    club: "HACR 2025-2026",
+    coverImage: `${import.meta.env.BASE_URL}WB-1.png`,
+    images: [
+      `${import.meta.env.BASE_URL}WB-1.png`,
+      `${import.meta.env.BASE_URL}WB-2.JPG`,
+    ],
+    content: `Hoping to stay in the country, a gay man proposes a green card marriage to his lesbian friend in exchange for paying for her IVF treatment. All plans go out the window when his grandmother surprises them with plans for an extravagant Korean wedding banquet.`,
+  },
+  "asian-new-years": {
+    title: "A[sian] New Year[s]",
+    date: "March 4, 2026",
+    club: "HACR 2025-2026",
+    coverImage: `${import.meta.env.BASE_URL}ANY-1.JPG`,
+    images: [
+      `${import.meta.env.BASE_URL}ANY-1.JPG`,
+      `${import.meta.env.BASE_URL}ANY-2.JPG`,
+      `${import.meta.env.BASE_URL}ANY-3.JPG`,
+    ],
+    content: `Celebrate wonderful Pan-Asian New Years (Lunar, Solar, & Lunar-Solar) traditions with the AACC! Learn about the histories of and enjoy holiday foods like niangao and ugadi pachadi while racing for a mystery prize with our New Years traditions and challenges.`,
+  },
+  "monthly-movie-night-the-lady": {
+    title: "Monthly Movie Night: The Lady",
+    date: "February 24, 2026",
+    club: "HACR 2025-2026",
+    coverImage: `${import.meta.env.BASE_URL}TL-1.JPG`,
+    images: [
+      `${import.meta.env.BASE_URL}TL-1.JPG`,
+    ],
+    content: `The February installment of Monthly Movie Night features the Burmese politician and Nobel laureate Aung San Suu Kyi. Michelle Yeoh stars in the 2011 film The Lady, which tells the story of how the former leader becomes a key figure in Myanmar's democracy movement. We will have a short discussion after the movie about different historical and political themes accompanied by Burmese refreshments.`,
+  },
+  "multilingual-mukbang": {
+    title: "Multilingual Mukbang",
+    date: "March 31, 2026",
+    club: "HACR 2025-2026",
+    coverImage: `${import.meta.env.BASE_URL}MLM-1.jpg`,
+    images: [
+      `${import.meta.env.BASE_URL}MLM-1.jpg`,
+      `${import.meta.env.BASE_URL}MLM-2.JPG`,
+      `${import.meta.env.BASE_URL}MLM-3.JPG`,
+      `${import.meta.env.BASE_URL}MLM-4.JPG`,
+      `${import.meta.env.BASE_URL}MLM-5.JPG`,
+      `${import.meta.env.BASE_URL}MLM-6.JPG`,
+    ],
+    content: `Asia has such a beautiful diversity of languages, dialects, and ways to communicate with one another. Come to the AACC to learn some phrases from Asian languages not taught at Yale, including Kazakh, Hmong, Fujianese, Mongolian, Sinhala, and Burmese! All accompanied by delicious snacks from each culture as prizes. How much can you learn? How much can you eat?`,
+  },
+  "monthly-movie-night-princess-mononoke": {
+    title: "Monthly Movie Night: Princess Mononoke",
+    date: "April 14, 2026",
+    club: "HACR 2025-2026",
+    coverImage: `${import.meta.env.BASE_URL}PM-1.png`,
+    images: [
+      `${import.meta.env.BASE_URL}PM-1.png`,
+    ],
+    content: `In celebration of Earth Day, come join us for our final movie night! We will be discussing themes of coexistence over dominance, spirituality, and the conflict between industrial progress and nature with this classic Studio Ghibli film. Mango sticky rice and other food will be provided, but BYOD (bring your own dishware) to celebrate Earth Day! Register on Yale Connect today!`,
+  },
   "taste-of-casa": {
     title: "Taste of CASA",
     date: "December 9, 2023",
